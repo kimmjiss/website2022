@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+< html> 
+< head> 
+     <meta charset="utf-8"> 
+     <title>Popup Demo</title> 
+< /head> 
+
+
+<body> 
+     <h1>레어어 팝업창 띄우기</h1> 
+     <!-- 버튼 --> 
+     <button class="trigger">이메일 보내기</button> 
+     
+     <!-- 팝업 될 레이어 --> 
+     <div class="modal"> 
+         <div class="modal-content"> 
+             <span class="close-button">&times;</span> 
+             <h1 class="title">메일 보내기</h1> 
+             <form action="#post.php" method="POST"> 
+               <label for="email">Email</label> 
+               <input type="email" name="email" placeholder="Your email" required="required"> 
+               <label></label> 
+               <textarea name="message" placeholder="Test Message" required="required"></textarea> 
+               <input type="button" id="cancel" value="취소"> 
+               <input type="submit" id="submit" value="보내기"> 
+             </form> 
+         </div> 
+     </div>
+
+    <script type="text/javascript"> 
+         var modal = document.querySelector(".modal"); 
+         
